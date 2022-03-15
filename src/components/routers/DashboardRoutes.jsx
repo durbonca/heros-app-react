@@ -5,7 +5,7 @@ import { MarvelScreen } from '../marvel/MarvelScreen';
 import { SearchScreen } from '../search/SearchScreen';
 import { Navbar } from '../ui/Navbar';
 
-export const DashboarRoutes = () => {
+export const DashboardRoutes = () => {
   return (
     <div>
         <Navbar />
