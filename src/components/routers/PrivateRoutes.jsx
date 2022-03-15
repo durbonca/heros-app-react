@@ -5,8 +5,9 @@ import { Navigate, useLocation } from "react-router-dom"
 export const PrivateRoutes = ({ children }) => {
     const { user } = useContext(AuthContext)
 
-    const location = useLocation()
-    localStorage.setItem('lastPath', location.pathname)
+    const {pathname, search } = useLocation()
+    localStorage.setItem('lastPath', pathname + search)
+
 
     return user.logged ? children : <Navigate to="/login" />
 }
