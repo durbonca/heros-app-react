@@ -11,6 +11,7 @@ export const DashboarRoutes = () => {
         <Navbar />
         <div className='container'>
           <Routes>
+              <Route path="/" element={<MarvelScreen />} />
               <Route path="/marvel" element={<MarvelScreen />} />
               <Route path="/dc" element={<DcScreen />} />
               <Route path="/search" element={<SearchScreen />} />
