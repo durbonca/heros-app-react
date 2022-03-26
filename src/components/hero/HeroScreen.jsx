@@ -9,7 +9,7 @@ export const HeroScreen = () => {
   const { id : heroeId } = useParams();
   
   const hero = useMemo(() => getHeroById(heroeId), [heroeId]);
-   
+  
   if(!hero) {
     return <Navigate to='/' />
   }

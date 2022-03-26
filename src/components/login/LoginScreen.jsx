@@ -8,10 +8,10 @@ export const LoginScreen = () => {
   const navigate = useNavigate()
 
   const { dispatch } = useContext(AuthContext)
-  const lastPath = localStorage.getItem('lastPath') || '/'
-
+  
   const handleLogin = () => {
-    dispatch({ type: types.login , payload: { logged: true, name: 'usuario' } })
+    const lastPath = localStorage.getItem('lastPath') || '/'  
+    dispatch({ type: types.login , payload: { name: 'usuario' } })
     navigate(lastPath, { replace: true })
   }
 

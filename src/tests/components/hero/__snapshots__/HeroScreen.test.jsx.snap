@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeroScreen> tests should to show hero if is hero on URL 1`] = `
+<div
+  className="row mt-5"
+>
+  <div
+    className="col-4"
+  >
+    <img
+      alt="dc-wonder"
+      className="img-thumbnail animate__animated animate__fadeInLeft"
+      src="/assets/dc-wonder.jpg"
+    />
+  </div>
+  <div
+    className="col-8 animate__animated animate__fadeIn"
+  >
+    <h3>
+      Wonder Woman
+    </h3>
+    <ul
+      className="list-group list-group-flush"
+    >
+      <li
+        className="list-group-item"
+      >
+        <b>
+          Alter ego:
+        </b>
+         
+        Princess Diana
+      </li>
+      <li
+        className="list-group-item"
+      >
+        <b>
+          Publisher:
+        </b>
+         
+        DC Comics
+      </li>
+      <li
+        className="list-group-item"
+      >
+        <b>
+          First Appearance:
+        </b>
+         
+        All Star Comics #8
+      </li>
+    </ul>
+    <h5
+      className="mt-3"
+    >
+      Characters
+    </h5>
+    <p>
+      Princess Diana
+    </p>
+    <button
+      className="btn btn-outline-info"
+      onClick={[Function]}
+    >
+      Regresar
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<HeroScreen> tests shouldn't show hero if is not hero on URL 1`] = `
+<h1>
+  No hero page
+</h1>
+`;
