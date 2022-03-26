@@ -48,10 +48,8 @@ describe('<HeroScreen> tests',()=>{
                 </Routes>
             </MemoryRouter>
         );
-
         wrapper.find('button').simulate('click');
-        expect(mockNavigate).toHaveBeenCalledWith(-1, { replace: true }); 
-
+        expect(mockNavigate).toHaveBeenCalledWith( -1, { replace: true } ); 
     })
 
 })
